@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Intensive Bootcamp - Master JS & Git in 4 Weeks</title>
+    <meta name="description" content="Master JavaScript from beginner to intermediate level with Git & GitHub version control in our intensive 4-week bootcamp program.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <!-- <img src="assets/logo.png" alt="JavaScript Mastery Bootcamp"> -->
+                <span>Veltrix BootCamp</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#hero" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#curriculum" class="nav-link">Curriculum</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#course-outline" class="nav-link">Course Details</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#instructors" class="nav-link">Instructors</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials" class="nav-link">Reviews</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#faq" class="nav-link">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#enroll" class="nav-link cta-nav">Enroll Now</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Master JavaScript & Git in 4 Weeks</h1>
+                    <p class="hero-subtitle">Intensive bootcamp to take you from JavaScript beginner to intermediate level with complete Git & GitHub mastery in just 1 month and make you industry ready.</p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">67%</span>
+                            <span class="stat-label">JavaScript Mastery</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">70%</span>
+                            <span class="stat-label">Job Ready</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">4</span>
+                            <span class="stat-label">Weeks</span>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="scrollToEnroll()">
+                            <i class="fas fa-rocket"></i>
+                            Start Your Journey
+                        </button>
+                        <button class="btn btn-secondary" onclick="playVideo()">
+                            <i class="fas fa-play"></i>
+                            Watch Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/jslogo.png" alt="JavaScript Coding Illustration">
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <!-- <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29C47.79,22.2,103.59,10.46,158.1,10.46C158.1,10.46,259.7,3.14,378,36.29C496.3,69.44,614.6,136.29,675.6,120C736.6,103.71,829.9,10.46,985.3,46.29C1140.7,82.12,1200,120,1200,120V0Z" class="shape-fill"></path>
+            </svg> -->
+        </div>
+    </section>
+
+    <!-- Features/Benefits Section -->
+    <section id="benefits" class="benefits">
+        <div class="container">
+            <h2 class="section-title">Why Choose Our Bootcamp?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>JavaScript Mastery</h3>
+                    <p>Hands-on learning experience on javascript basics to intermediate level. Learn how javascript works in-depth </p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3>Git & GitHub Mastery</h3>
+                    <p>Master version control with Git and collaborate effectively using GitHub</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Expert Mentorship</h3>
+                    <p>Learn from industry professionals with years of JavaScript development experience</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Interactive Projects</h3>
+                    <p>Build a portfolio of 5+ projects including a full-stack application</p>
+                </div>
+                <!-- <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Industry Recognition</h3>
+                    <p>Receive a certificate recognized by top tech companies</p>
+                </div> -->
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Craft Resume</h3>
+                    <p>Job placement assistance and interview preparation included</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum Overview -->
+    <section id="curriculum" class="curriculum">
+        <div class="container">
+            <div class="curriculum-header">
+                <h2 class="section-title">4-Week Intensive Curriculum</h2>
+                <p class="section-subtitle">Fast-track journey from JavaScript beginner to intermediate with Git & GitHub mastery</p>
+            </div>
+            <div class="curriculum-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span>W1</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Week 1: JavaScript Foundations + Git Basics</h3>
+                        <p>Core JavaScript concepts with introduction to version control</p>
+                        <ul class="timeline-list">
+                            <li>JavaScript Syntax, Variables & Data Types</li>
+                            <li>Functions, Scope & Closures</li>
+                            <li>Git Installation & Basic Commands</li>
+                            <li>Repository Creation & First Commits</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span>W2</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Week 2: Arrays, Objects & Git Branching</h3>
+                        <p>Advanced JavaScript data structures with Git workflow mastery</p>
+                        <ul class="timeline-list">
+                            <li>Arrays, Objects & Methods</li>
+                            <li>ES6+ Features (Arrow Functions, Destructuring)</li>
+                            <li>Git Branching & Merging</li>
+                            <li>Conflict Resolution</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span>W3</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Week 3: DOM, Events & GitHub Collaboration</h3>
+                        <p>Interactive web development with collaborative coding on GitHub</p>
+                        <ul class="timeline-list">
+                            <li>DOM Manipulation & Event Handling</li>
+                            <li>Form Validation & Local Storage</li>
+                            <li>GitHub Account Setup & Remote Repos</li>
+                            <li>Pull Requests & Code Reviews</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span>W4</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Week 4: Async JS, APIs & Portfolio Project</h3>
+                        <p>Advanced JavaScript with API integration and final portfolio deployment</p>
+                        <ul class="timeline-list">
+                            <li>Promises, Async/Await & Fetch API</li>
+                            <li>Working with REST APIs</li>
+                            <li>GitHub Pages Deployment</li>
+                            <li>Portfolio Project & Showcase</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Course Outline -->
+    <section id="course-outline" class="course-outline">
+        <div class="container">
+            <h2 class="section-title">Detailed Course Outline</h2>
+            <div class="outline-tabs">
+                <button class="tab-button active" data-tab="javascript">JavaScript Track</button>
+                <button class="tab-button" data-tab="github">GitHub Track</button>
+                <!-- <button class="tab-button" data-tab="projects">Projects</button> -->
+            </div>
+            
+            <div class="tab-content active" id="javascript">
+                <div class="modules-grid">
+                    <div class="module-card">
+                        <div class="module-header">
+                            <h3>Module 1: JavaScript Basics</h3>
+                            <span class="module-duration">1 weeks</span>
+                        </div>
+                        <ul class="module-topics">
+                            <li><i class="fas fa-check-circle"></i>JavaScript Introduction & Setup</li>
+                            <li><i class="fas fa-check-circle"></i>Variables & Data Types</li>
+                            <li><i class="fas fa-check-circle"></i>Operators & Expressions</li>
+                            <li><i class="fas fa-check-circle"></i>Control Flow (if/else, loops)</li>
+                            <li><i class="fas fa-check-circle"></i>Functions & Parameters</li>
+                        </ul>
+                    </div>
+                    <div class="module-card">
+                        <div class="module-header">
+                            <h3>Module 2: Advanced JavaScript</h3>
+                            <span class="module-duration">2 weeks</span>
+                        </div>
+                        <ul class="module-topics">
+                            <li><i class="fas fa-check-circle"></i>Arrays & Array Methods</li>
+                            <li><i class="fas fa-check-circle"></i>Objects & Prototypes</li>
+                            <li><i class="fas fa-check-circle"></i>Scope & Closures</li>
+                            <li><i class="fas fa-check-circle"></i>ES6+ Features (Arrow functions, Destructuring)</li>
+                            <li><i class="fas fa-check-circle"></i>Error Handling</li>
+                        </ul>
+                    </div>
+                    <div class="module-card">
+                        <div class="module-header">
+                            <h3>Module 3: DOM & Browser APIs</h3>
+                            <span class="module-duration">4 weeks</span>
+                        </div>
+                        <ul class="module-topics">
+                            <li><i class="fas fa-check-circle"></i>DOM Manipulation</li>
+                            <li><i class="fas fa-check-circle"></i>Event Handling</li>
+                            <li><i class="fas fa-check-circle"></i>Browser APIs</li>
+                            <li><i class="fas fa-check-circle"></i>Local Storage</li>
+                            <li><i class="fas fa-check-circle"></i>Form Validation</li>
+                        </ul>
+                    </div>
+                    <div class="module-card">
+                        <div class="module-header">
+                            <h3>Module 4: Async JavaScript</h3>
+                            <span class="module-duration">4 weeks</span>
+                        </div>
+                        <ul class="module-topics">
+                            <li><i class="fas fa-check-circle"></i>Callbacks & Callback Hell</li>
+                            <li><i class="fas fa-check-circle"></i>Promises</li>
+                            <li><i class="fas fa-check-circle"></i>Async/Await</li>
+                            <li><i class="fas fa-check-circle"></i>Fetch API</li>
+                            <li><i class="fas fa-check-circle"></i>Working with REST APIs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="github">
+                <div class="github-track">
+                    <div class="track-header">
+                        <h3>Git & GitHub Mastery Track</h3>
+                        <p>Learn version control and collaboration throughout the entire bootcamp</p>
+                    </div>
+                    <div class="week-breakdown">
+                        <div class="week-item">
+                            <h4>Week 1-2: Git Fundamentals</h4>
+                            <ul>
+                                <li>Git installation and configuration</li>
+                                <li>Repository initialization</li>
+                                <li>Basic commands (add, commit, status)</li>
+                                <li>Working directory vs staging area</li>
+                            </ul>
+                        </div>
+                        <div class="week-item">
+                            <h4>Week 3-4: Branching & Merging</h4>
+                            <ul>
+                                <li>Creating and switching branches</li>
+                                <li>Merging strategies</li>
+                                <li>Resolving conflicts</li>
+                                <li>Git workflow best practices</li>
+                            </ul>
+                        </div>
+                        <div class="week-item">
+                            <h4>Week 5-8: GitHub Collaboration</h4>
+                            <ul>
+                                <li>Remote repositories</li>
+                                <li>Push, pull, and fetch</li>
+                                <li>Pull requests and code reviews</li>
+                                <li>Issues and project management</li>
+                            </ul>
+                        </div>
+                        <div class="week-item">
+                            <h4>Week 9-12: Advanced Git</h4>
+                            <ul>
+                                <li>Rebasing and squashing</li>
+                                <li>Git hooks</li>
+                                <li>GitHub Actions basics</li>
+                                <li>Open source contribution</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="tab-content" id="projects">
+                <div class="projects-showcase">
+                    <h3>Build Your Portfolio</h3>
+                    <p>Complete 5+ hands-on projects that showcase your JavaScript and GitHub skills</p>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <img src="assets/project-todo.jpg" alt="Todo App">
+                            <div class="project-info">
+                                <h4>Interactive Todo App</h4>
+                                <p>Build a feature-rich todo application with local storage</p>
+                                <div class="project-tech">
+                                    <span>JavaScript</span>
+                                    <span>DOM</span>
+                                    <span>Local Storage</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <img src="assets/project-weather.jpg" alt="Weather App">
+                            <div class="project-info">
+                                <h4>Weather Dashboard</h4>
+                                <p>Create a weather app using external APIs</p>
+                                <div class="project-tech">
+                                    <span>Fetch API</span>
+                                    <span>Async/Await</span>
+                                    <span>JSON</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <img src="assets/project-quiz.jpg" alt="Quiz App">
+                            <div class="project-info">
+                                <h4>Interactive Quiz App</h4>
+                                <p>Develop a timed quiz application with scoring</p>
+                                <div class="project-tech">
+                                    <span>Objects</span>
+                                    <span>Arrays</span>
+                                    <span>Timer Functions</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <img src="assets/project-ecommerce.jpg" alt="E-commerce">
+                            <div class="project-info">
+                                <h4>E-commerce Cart</h4>
+                                <p>Build a shopping cart with product management</p>
+                                <div class="project-tech">
+                                    <span>ES6+ Classes</span>
+                                    <span>Modules</span>
+                                    <span>Event Delegation</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card featured">
+                            <img src="assets/project-capstone.jpg" alt="Capstone Project">
+                            <div class="project-info">
+                                <h4>Capstone Project</h4>
+                                <p>Full-stack application with your chosen tech stack</p>
+                                <div class="project-tech">
+                                    <span>Full-Stack</span>
+                                    <span>API Integration</span>
+                                    <span>GitHub Pages</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Instructors Section -->
+    <section id="instructors" class="instructors">
+        <div class="container">
+            <h2 class="section-title">Meet Your Instructors</h2>
+            <p class="section-subtitle">Learn from industry experts with years of experience</p>
+            <div class="instructors-grid">
+                <div class="instructor-card">
+                    <div class="instructor-image">
+                        <img src="assets/instructor-1.jpg" alt="Sarah Johnson">
+                    </div>
+                    <div class="instructor-info">
+                        <h3>Sarah Johnson</h3>
+                        <p class="instructor-title">Senior JavaScript Developer</p>
+                        <p class="instructor-bio">5+ years at Google, specializing in front-end architecture and JavaScript performance optimization.</p>
+                        <div class="instructor-skills">
+                            <span>JavaScript</span>
+                            <span>React</span>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="instructor-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="instructor-card">
+                    <div class="instructor-image">
+                        <img src="assets/instructor-2.jpg" alt="Michael Chen">
+                    </div>
+                    <div class="instructor-info">
+                        <h3>Michael Chen</h3>
+                        <p class="instructor-title">Full-Stack Engineer</p>
+                        <p class="instructor-bio">Former Microsoft engineer with expertise in JavaScript ecosystem and version control workflows.</p>
+                        <div class="instructor-skills">
+                            <span>Git/GitHub</span>
+                            <span>DevOps</span>
+                            <span>Testing</span>
+                        </div>
+                        <div class="instructor-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="instructor-card">
+                    <div class="instructor-image">
+                        <img src="assets/instructor-3.jpg" alt="Emily Rodriguez">
+                    </div>
+                    <div class="instructor-info">
+                        <h3>Emily Rodriguez</h3>
+                        <p class="instructor-title">Lead Frontend Developer</p>
+                        <p class="instructor-bio">Bootcamp graduate turned instructor, passionate about helping others transition into tech careers.</p>
+                        <div class="instructor-skills">
+                            <span>Mentoring</span>
+                            <span>Career Coaching</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="instructor-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Carousel -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Student Success Stories</h2>
+            <div class="testimonials-carousel">
+                <div class="testimonial-track">
+                    <div class="testimonial-card active">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"This bootcamp completely transformed my career. I went from knowing nothing about programming to landing a junior developer role at a tech startup within 3 months of graduation!"</p>
+                            <div class="testimonial-author">
+                                <img src="assets/student-1.jpg" alt="Alex Thompson">
+                                <div class="author-info">
+                                    <h4>Alex Thompson</h4>
+                                    <span>Junior Developer at TechStart Inc.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"The instructors are amazing! They break down complex concepts into digestible pieces. The GitHub module was particularly valuable - I now contribute to open source projects regularly."</p>
+                            <div class="testimonial-author">
+                                <img src="assets/student-2.jpg" alt="Maria Garcia">
+                                <div class="author-info">
+                                    <h4>Maria Garcia</h4>
+                                    <span>Frontend Developer at WebFlow</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Best investment I've made! The hands-on projects helped me build a strong portfolio. The career support team helped me prepare for interviews and I got multiple job offers."</p>
+                            <div class="testimonial-author">
+                                <img src="assets/student-3.jpg" alt="David Kim">
+                                <div class="author-info">
+                                    <h4>David Kim</h4>
+                                    <span>Software Engineer at InnovateTech</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"As someone with no technical background, I was nervous about learning to code. The bootcamp's supportive environment and structured curriculum made it achievable. Now I'm a confident developer!"</p>
+                            <div class="testimonial-author">
+                                <img src="assets/student-4.jpg" alt="Lisa Wang">
+                                <div class="author-info">
+                                    <h4>Lisa Wang</h4>
+                                    <span>Full-Stack Developer at DevCorp</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="prev-btn" onclick="previousTestimonial()">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="carousel-dots">
+                        <span class="dot active" onclick="currentTestimonial(1)"></span>
+                        <span class="dot" onclick="currentTestimonial(2)"></span>
+                        <span class="dot" onclick="currentTestimonial(3)"></span>
+                        <span class="dot" onclick="currentTestimonial(4)"></span>
+                    </div>
+                    <button class="next-btn" onclick="nextTestimonial()">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Do I need any programming experience to join?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No prior programming experience is required! Our bootcamp is designed for complete beginners. We start with the very basics and gradually build up to more advanced concepts. We also welcome intermediate developers who want to strengthen their JavaScript fundamentals.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What equipment do I need for the bootcamp?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You'll need a computer (Windows, Mac, or Linux) with a reliable internet connection. We'll guide you through setting up all necessary software including a code editor, Git, and Node.js during the first week.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>How much time should I dedicate to the bootcamp?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We recommend dedicating 15-20 hours per week. This includes 8 hours of live instruction, 4-6 hours of homework, and 3-6 hours of project work. The schedule is flexible to accommodate working professionals.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What kind of job support do you provide?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our career support includes resume review, portfolio development guidance, mock interviews, salary negotiation tips, and access to our hiring partner network. We also provide ongoing mentorship for 6 months after graduation.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Is there a money-back guarantee?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! We offer a 30-day money-back guarantee. If you're not satisfied with the bootcamp within the first 30 days, we'll provide a full refund, no questions asked.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Do you provide certificates upon completion?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, upon successful completion of all projects and assessments, you'll receive a certificate of completion that's recognized by our industry partners and can be added to your LinkedIn profile.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enrollment CTA Section -->
+    <section id="enroll" class="enrollment">
+        <div class="container">
+            <div class="enrollment-content">
+                <div class="enrollment-info">
+                    <h2>Ready to Transform Your Career?</h2>
+                    <p>Join hundreds of successful graduates who've launched their tech careers with us</p>
+                    <div class="enrollment-features">
+                        <div class="feature">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>4-Week Intensive Program</span>
+                        </div>
+                        <!-- <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <span>Small Class Sizes (Max 25 Students)</span>
+                        </div> -->
+                        <div class="feature">
+                            <i class="fas fa-laptop-code"></i>
+                            <span>5+ Portfolio Projects</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-certificate"></i>
+                            <span>Certificate of completion</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="enrollment-card">
+                    <div class="pricing">
+                        <span class="original-price">₦100,000</span>
+                        <span class="current-price">₦25,000</span>
+                        <span class="discount-badge">75% OFF</span>
+                    </div>
+                    <div class="payment-options">
+                        <div class="payment-option">
+                            <input type="radio" id="full-payment" name="payment" value="full" checked>
+                            <label for="full-payment">
+                                <strong>FEE</strong>
+                                <span>₦25,000</span>
+                            </label>
+                        </div>
+                        <!-- <div class="payment-option">
+                            <input type="radio" id="installment" name="payment" value="installment">
+                            <label for="installment">
+                                <strong>3 Installments</strong>
+                                <span>₦180,000 x 3 months</span>
+                            </label>
+                        </div> -->
+                    </div>
+                    <div class="enrollment-form">
+                        <input type="text" id="student-name" placeholder="Full Name" required>
+                        <input type="email" id="student-email" placeholder="Email Address" required>
+                        <input type="tel" id="student-phone" placeholder="Phone Number" required>
+                        <select id="experience-level" required>
+                            <option value="">Select Experience Level</option>
+                            <option value="absolute-beginner">Absolute Beginner - Intermediate</option>
+                            <!-- <option value="some-experience">Some Experience</option>
+                            <option value="intermediate">Intermediate</option> -->
+                        </select>
+                    </div>
+                    <button class="btn btn-primary btn-large" id="enroll-btn" onclick="initiatePayment()">
+                        <i class="fas fa-credit-card"></i>
+                        Enroll Now - Secure Your Spot
+                    </button>
+                    <div class="trust-indicators">
+                        <div class="trust-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Secure Payment</span>
+                        </div>
+                        <div class="trust-item">
+                            <i class="fas fa-undo"></i>
+                            <span>30-Day Guarantee</span>
+                        </div>
+                        <div class="trust-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Limited Spots</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email Us</h3>
+                            <p>info@jsmastery-bootcamp.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Call Us</h3>
+                            <p>+234 (0) 123 456 7890</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Visit Us</h3>
+                            <p>123 Tech Hub, Victoria Island, Lagos, Nigeria</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/logo.png" alt="JavaScript Mastery Bootcamp">
+                        <span>JS Mastery</span>
+                    </div>
+                    <p>Transforming careers through comprehensive JavaScript education and hands-on learning experiences.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#curriculum">Curriculum</a></li>
+                        <li><a href="#course-outline">Course Details</a></li>
+                        <li><a href="#instructors">Instructors</a></li>
+                        <li><a href="#testimonials">Reviews</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Programs</h3>
+                    <ul>
+                        <li><a href="#">JavaScript Fundamentals</a></li>
+                        <li><a href="#">Git & GitHub</a></li>
+                        <li><a href="#">Career Support</a></li>
+                        <li><a href="#">Portfolio Projects</a></li>
+                        <li><a href="#">Job Placement</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 JavaScript Mastery Bootcamp. All rights reserved.</p>
+                    <div class="payment-methods">
+                        <span>Secure payments powered by</span>
+                        <img src="assets/paystack-logo.png" alt="Paystack" class="paystack-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
