@@ -147,26 +147,40 @@ window.currentTestimonial = currentTestimonialSlide;
 // ===================================
 // FAQ Accordion
 // ===================================
-function initFAQAccordion() {
-    const faqQuestions = document.querySelectorAll('.faq-question');
-    
-    faqQuestions.forEach(question => {
-        question.addEventListener('click', function() {
-            const faqItem = this.parentElement;
-            const isActive = faqItem.classList.contains('active');
-            
-            // Close all FAQ items
-            document.querySelectorAll('.faq-item').forEach(item => {
-                item.classList.remove('active');
-            });
-            
-            // Open clicked item if it wasn't active
-            if (!isActive) {
-                faqItem.classList.add('active');
-            }
-        });
+  const faqItems = document.querySelectorAll('.faq-item');
+
+  faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    question.addEventListener('click', () => {
+      // Close all other FAQ items
+      faqItems.forEach(i => {
+        if (i !== item) i.classList.remove('active');
+      });
+      // Toggle current one
+      item.classList.toggle('active');
     });
-}
+  });
+
+// function initFAQAccordion() {
+//     const faqQuestions = document.querySelectorAll('.faq-question');
+    
+//     faqQuestions.forEach(question => {
+//         question.addEventListener('click', function() {
+//             const faqItem = this.parentElement;
+//             const isActive = faqItem.classList.contains('active');
+            
+//             // Close all FAQ items
+//             document.querySelectorAll('.faq-item').forEach(item => {
+//                 item.classList.remove('active');
+//             });
+            
+//             // Open clicked item if it wasn't active
+//             if (!isActive) {
+//                 faqItem.classList.add('active');
+//             }
+//         });
+//     });
+// }
 
 // Global function for FAQ toggle
 function toggleFAQ(element) {
@@ -733,3 +747,5 @@ if (typeof module !== 'undefined' && module.exports) {
         isValidEmail
     };
 }
+
+// 
