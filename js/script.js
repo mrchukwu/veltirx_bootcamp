@@ -323,10 +323,10 @@ function showFieldError(field, message) {
 // ===================================
 
 // Encode the Paystack link (obfuscation)
-// const encodedLink =
-//   "aHR0cHM6Ly9wYXlzdGFjay5zaG9wL3BheS92ZWx0cml4LWphdmFjcmlwdC1ib290Y2FtcA==";
 const encodedLink =
-  "aHR0cHM6Ly9wYXlzdGFjay5zaG9wL3BheS92ZWx0cml4LWphdmFjcmlwdC1ib290Y2FtcC10ZXN0";
+  "aHR0cHM6Ly9wYXlzdGFjay5zaG9wL3BheS92ZWx0cml4LWphdmFjcmlwdC1ib290Y2FtcA==";
+// const encodedLink =
+//   "aHR0cHM6Ly9wYXlzdGFjay5zaG9wL3BheS92ZWx0cml4LWphdmFjcmlwdC1ib290Y2FtcC10ZXN0";
 
 document.getElementById("payBtn").addEventListener("click", () => {
   // Decode link when button is clicked
