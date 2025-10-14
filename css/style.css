@@ -1274,6 +1274,32 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
 }
 
+
+.form-container iframe {
+  width: 100%;
+  border: none;
+  height: 800px;
+  overflow-y: scroll;
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #6a1b9a #f1f1f1; /* thumb color | track color */
+}
+
+/* For Chrome, Edge, and Safari */
+.form-container iframe::-webkit-scrollbar {
+  width: 6px;
+}
+
+.form-container iframe::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.form-container iframe::-webkit-scrollbar-thumb {
+  background-color: #6a1b9a; /* Purple to match Veltrix style */
+  border-radius: 10px;
+}
+
+
 /* ===================================
    Footer Section
    =================================== */
