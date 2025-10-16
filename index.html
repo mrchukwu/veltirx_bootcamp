@@ -892,21 +892,24 @@
                         </div>
                     </div>
                 </div>
-                <form class="form-container">
-                  <iframe 
-  src="https://docs.google.com/forms/d/e/1FAIpQLSdSEQD1gvT3HfBoX8JfHdhRgN2XTi4_sK2jhnJyPp11Q-D35w/viewform?embedded=true" 
-  width="640" 
-  height="700" 
-  frameborder="0" 
-  marginheight="0" 
-  marginwidth="0">
-  Loading…
-</iframe>
-
-                    <!-- <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message" rows="5" required></textarea>
-                    <button type="submit" class="btn btn-primary">Send Message</button> -->
+                <!-- <form class="form-container"> -->
+                <form class="contact-form" name="contact" netlify>
+                    <label for="name" style="font-size: 0.99rem;">Name </label>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <label for="email" style="font-size: 0.99rem;">Email </label>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <label for="message" style="font-size: 0.99rem;">Message </label>
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <!-- <iframe 
+    src="https://docs.google.com/forms/d/e/1FAIpQLSdSEQD1gvT3HfBoX8JfHdhRgN2XTi4_sK2jhnJyPp11Q-D35w/viewform?embedded=true" 
+    width="640" 
+    height="700" 
+    frameborder="0" 
+    marginheight="0" 
+    marginwidth="0">
+    Loading…
+  </iframe> -->
                 </form>
             </div>
         </div>
