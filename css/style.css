@@ -79,9 +79,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, rgb(164, 118, 248) 0%, rgb(25, 50, 252) 100%);
     color: white;
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    box-shadow: 0 4px 15px #09135a66;
 }
 
 .btn-primary:hover {
@@ -91,12 +91,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-secondary {
     background: transparent;
-    color: #667eea;
+    color: rgb(102, 127, 234);
     border: 2px solid #667eea;
 }
 
 .btn-secondary:hover {
-    background: #667eea;
+    background: #09133c;
     color: white;
 }
 
@@ -186,7 +186,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cta-nav {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, rgb(164, 118, 248) 0%, rgb(25, 50, 252) 100%);
     color: white !important;
     padding: 10px 20px;
     border-radius: 6px;
@@ -356,13 +356,13 @@ h1, h2, h3, h4, h5, h6 {
 .benefit-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-    border-top-color: #667eea;
+    border-top-color: rgb(25, 50, 252);
 }
 
 .benefit-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, rgb(9, 126, 234) 0%, rgb(25, 50, 252) 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -425,7 +425,7 @@ h1, h2, h3, h4, h5, h6 {
 .timeline-marker {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, rgb(9, 126, 234) 0%, rgb(25, 50, 252) 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -549,7 +549,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .module-header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, rgb(9, 126, 234) 0%, rgb(25, 50, 252) 100%);
     color: white;
     padding: 1.5rem;
     display: flex;
@@ -582,7 +582,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .module-topics i {
-    color: #48bb78;
+    color: rgb(9, 19, 60);
 }
 
 /* GitHub Track Styles */
@@ -734,7 +734,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto 1.5rem;
     overflow: hidden;
     border-radius: 50%;
-    border: 4px solid #667eea;
+    border: 4px solid rgb(9, 126, 234);
 }
 
 .instructor-image img {
@@ -750,7 +750,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .instructor-title {
-    color: #667eea;
+    color: rgb(25, 50, 252);
     font-weight: 600;
     margin-bottom: 1rem;
 }
@@ -787,7 +787,7 @@ h1, h2, h3, h4, h5, h6 {
 .instructor-social a {
     width: 40px;
     height: 40px;
-    background: #667eea;
+    background: rgb(79, 106, 225);
     color: white;
     border-radius: 50%;
     display: flex;
@@ -840,7 +840,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .stars {
-    color: #f6ad55;
+    color: rgb(25, 50, 252);
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
 }
@@ -890,7 +890,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 50px;
     border: none;
     border-radius: 50%;
-    background: #667eea;
+    background: rgb(25, 50, 252);
     color: white;
     cursor: pointer;
     display: flex;
@@ -1058,7 +1058,8 @@ h1, h2, h3, h4, h5, h6 {
    =================================== */
 .enrollment {
     padding: 100px 0;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+    background: linear-gradient(135deg, rgb(164, 118, 248) 0%, rgb(25, 50, 252) 100%);
     color: white;
 }
 
@@ -1235,7 +1236,7 @@ h1, h2, h3, h4, h5, h6 {
 .contact-item i {
     width: 50px;
     height: 50px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, rgb(164, 118, 248) 0%, rgb(25, 50, 252) 100%);
     color: white;
     border-radius: 50%;
     display: flex;
